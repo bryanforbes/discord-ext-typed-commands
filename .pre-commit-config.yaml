@@ -23,8 +23,13 @@ repos:
         language: system
         entry: poetry run flake8
         files: \.pyi?$
-    -   id: mypy
-        name: mypy
+    -   id: mypy-py
+        name: mypy python
         language: system
         entry: poetry run mypy
-        files: \.pyi?$
+        files: \.py$
+    -   id: mypy-pyi
+        name: mypy stubs
+        language: system
+        entry: poetry run mypy
+        files: \.pyi$

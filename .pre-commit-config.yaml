@@ -1,4 +1,9 @@
 default_stages: [commit]
+files: >
+  (?x)^(
+      discord/.*\.pyi?$|
+      tests/.*\.py$
+  )$
 repos:
 -   repo: local
     hooks:
@@ -12,24 +17,21 @@ repos:
         name: isort
         language: system
         entry: poetry run isort --check-only
-        files: \.pyi?$
     -   id: black
         name: black
         language: system
         entry: poetry run black --check
-        files: \.pyi?$
     -   id: flake8
         name: flake8
         language: system
         entry: poetry run flake8
-        files: \.pyi?$
     -   id: mypy-py
         name: mypy python
         language: system
         entry: poetry run mypy
-        files: \.py$
+        exclude: \.pyi$
     -   id: mypy-pyi
         name: mypy stubs
         language: system
         entry: poetry run mypy
-        files: \.pyi$
+        exclude: \.py$

@@ -45,8 +45,21 @@ else:
     class AutoShardedBot(commands.AutoShardedBot, Generic[CT]):
         ...
 
-    class Cog(commands.Cog, Generic[CT]):
-        ...
+    if sys.version_info >= (3, 7):
+
+        class Cog(commands.Cog, Generic[CT]):
+            ...
+
+    else:
+        # see: https://github.com/python/typing/issues/449
+
+        from typing import GenericMeta
+
+        class _GenericCogMeta(commands.CogMeta, GenericMeta):
+            ...
+
+        class Cog(commands.Cog, Generic[CT], metaclass=_GenericCogMeta):
+            ...
 
     class Command(commands.Command, Generic[CT]):
         ...

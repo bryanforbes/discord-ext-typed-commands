@@ -1,8 +1,9 @@
 # discord-ext-typed-commands
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/bryanforbes/discord-ext-typed-commands/blob/master/LICENSE)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Unit tests](https://github.com/bryanforbes/discord-ext-typed-commands/workflows/Unit%20tests/badge.svg)](https://github.com/bryanforbes/discord-ext-typed-commands/actions?query=workflow%3A%22Unit+tests%22)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 This package contains a discord.py extension to provide classes to more easily use typed commands

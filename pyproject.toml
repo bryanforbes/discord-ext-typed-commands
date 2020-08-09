@@ -19,7 +19,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6.1"
-"discord.py" = {git = "https://github.com/Rapptz/discord.py.git", rev = "d7aa18beed456fcda35fa12678fcd6ab97e52c30"}
+"discord.py" = "^1.4.1"
 importlib_metadata = {version = "^1.7.0", python = "<3.8"}
 typing-extensions = "^3.7.4"
 

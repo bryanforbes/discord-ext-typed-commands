@@ -1,12 +1,14 @@
 [tool.poetry]
 name = "discord-ext-typed-commands"
-version = "1.0.0dev0"
+version = "1.0.0"
 description = "Typed commands for discord.py"
 authors = ["Bryan Forbes <bryan@reigndropsfall.net>"]
 license = "BSD-3-Clause"
 readme = "README.md"
 packages = [
-  { include = "discord" }
+  { include = "discord" },
+  { include = "tests", format = "sdist" },
+  { include = "mypy.ini", format = "sdist" },
 ]
 include = [
   "discord/ext/typed_commands/py.typed"

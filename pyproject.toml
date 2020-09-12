@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discord-ext-typed-commands"
-version = "1.0.0"
+version = "1.0.1.dev0"
 description = "Typed commands for discord.py"
 authors = ["Bryan Forbes <bryan@reigndropsfall.net>"]
 license = "BSD-3-Clause"

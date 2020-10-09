@@ -2,8 +2,9 @@ import sys
 from typing import TYPE_CHECKING, Generic, TypeVar
 from typing_extensions import Final
 
-from discord.ext import commands
 from discord.ext.commands import *  # noqa
+
+from discord.ext import commands
 
 CT = TypeVar("CT", bound=commands.Context)
 

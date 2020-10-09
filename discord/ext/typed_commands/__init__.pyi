@@ -1,7 +1,8 @@
 from typing import TypeVar
 
-from discord.ext import commands
 from discord.ext.commands import *  # noqa
+
+from discord.ext import commands
 
 CT = TypeVar("CT", bound=commands.Context)
 

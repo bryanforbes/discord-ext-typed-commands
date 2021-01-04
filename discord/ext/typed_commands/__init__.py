@@ -1,12 +1,11 @@
 import sys
 from typing import TYPE_CHECKING, Generic, TypeVar
-from typing_extensions import Final
 
 from discord.ext.commands import *  # noqa
 
 from discord.ext import commands
 
-CT = TypeVar("CT", bound=commands.Context)
+CT = TypeVar('CT', bound=commands.Context)
 
 if TYPE_CHECKING:
 
@@ -83,8 +82,10 @@ else:
 
 if sys.version_info >= (3, 8):
     from importlib import metadata as importlib_metadata
+    from typing import Final
 else:
     import importlib_metadata
+    from typing_extensions import Final
 
 
-__version__: Final[str] = importlib_metadata.version("discord-ext-typed-commands")
+__version__: Final[str] = importlib_metadata.version('discord-ext-typed-commands')

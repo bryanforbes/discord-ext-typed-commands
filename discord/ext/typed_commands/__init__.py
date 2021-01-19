@@ -81,11 +81,17 @@ else:
 
 
 if sys.version_info >= (3, 8):
-    from importlib import metadata as importlib_metadata
+    from importlib.metadata import version
     from typing import Final
+
+    _version = version
 else:
+    from typing import Callable
+
     import importlib_metadata
     from typing_extensions import Final
 
+    _version: Callable[[str], str] = importlib_metadata.version
 
-__version__: Final[str] = importlib_metadata.version('discord-ext-typed-commands')
+
+__version__: Final[str] = _version('discord-ext-typed-commands')

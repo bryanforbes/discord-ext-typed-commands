@@ -1,6 +1,7 @@
 from typing import TypeVar
 
 from discord.ext.commands import *  # noqa
+from typing_extensions import Final
 
 from discord.ext import commands
 
@@ -15,3 +16,5 @@ class Group(commands.Group[CT]): ...  # type: ignore[no-redef]
 class HelpCommand(commands.HelpCommand[CT]): ...  # type: ignore[no-redef]
 class DefaultHelpCommand(commands.DefaultHelpCommand[CT]): ...  # type: ignore[no-redef]
 class MinimalHelpCommand(commands.MinimalHelpCommand[CT]): ...  # type: ignore[no-redef]
+
+__version__: Final[str]

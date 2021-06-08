@@ -224,7 +224,7 @@ idna = ">=2.0"
 
 [[package]]
 name = "importlib-metadata"
-version = "4.0.1"
+version = "4.5.0"
 description = "Read metadata from Python packages"
 category = "main"
 optional = false
@@ -618,8 +618,8 @@ idna-ssl = [
     {file = "idna-ssl-1.1.0.tar.gz", hash = "sha256:a933e3bb13da54383f9e8f35dc4f9cb9eb9b3b78c6b36f311254d6d0d92c6c7c"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-4.0.1-py3-none-any.whl", hash = "sha256:d7eb1dea6d6a6086f8be21784cc9e3bcfa55872b52309bc5fad53a8ea444465d"},
-    {file = "importlib_metadata-4.0.1.tar.gz", hash = "sha256:8c501196e49fb9df5df43833bdb1e4328f64847763ec8a50703148b73784d581"},
+    {file = "importlib_metadata-4.5.0-py3-none-any.whl", hash = "sha256:833b26fb89d5de469b24a390e9df088d4e52e4ba33b01dc5e0e4f41b81a16c00"},
+    {file = "importlib_metadata-4.5.0.tar.gz", hash = "sha256:b142cc1dd1342f31ff04bb7d022492b09920cb64fed867cd3ea6f80fe3ebd139"},
 ]
 importlib-resources = [
     {file = "importlib_resources-3.0.0-py2.py3-none-any.whl", hash = "sha256:d028f66b66c0d5732dae86ba4276999855e162a749c92620a38c1d779ed138a7"},
